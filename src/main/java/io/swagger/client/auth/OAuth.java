@@ -22,6 +22,10 @@ import java.util.List;
 public class OAuth implements Authentication {
   private String accessToken;
 
+  public OAuth(String accessToken) {
+	  setAccessToken(accessToken);
+  }
+  
   public String getAccessToken() {
     return accessToken;
   }
